@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<iframe src="https://player.vimeo.com/video/192320079" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}
+  </h1>
+</div>
+  <app-test (childEvent)="message=$event" [parentData]="name"></app-test>
+
+
+  <nav>
+
+
+    <a routerLink="/departmentlist" routerLinkActive="active">Department List</a> <br>
+    <a routerLink="/employees"  routerLinkActive="active">Employees</a>   <br>
+    <a routerLink="/departmentdetail" routerLinkActive="active">Departments</a> <br>
+    </nav>
+  <router-outlet></router-outlet>
