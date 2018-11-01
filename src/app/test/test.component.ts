@@ -26,7 +26,7 @@ export class TestComponent implements OnInit {
     temp;
     check=false;
     public enter;
-  @Input('parentData') name;
+  @Input('parentData') name="";
   @Output() public childEvent =  new EventEmitter();
   onclick(value) {
     this.temp=value;

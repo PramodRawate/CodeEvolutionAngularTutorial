@@ -22,7 +22,11 @@ export class DepartmentListComponent implements OnInit {
   }
 
   onSelect(department) {
+    // Absolute Routing is as given below
     this.router.navigate(["/departmentdetail",department.id])
+
+    // //Relative routing is as folow
+    // this.router.navigate([department.id],{relativeTo: this.route});
   }
 
   isSelected(department) {

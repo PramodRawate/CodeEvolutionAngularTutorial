@@ -5,7 +5,7 @@ import { ParamMap } from '@angular/router'
   selector: 'app-department-detail',
   templateUrl: './department-detail.component.html',
   // templateUrl: './department-detail.component.html',
-  styleUrls: ['./department-detail.component.css']
+  styleUrls: ['./department-detail.component.css'],
 })
 export class DepartmentDetailComponent implements OnInit {
 
@@ -35,5 +35,6 @@ export class DepartmentDetailComponent implements OnInit {
   goToDepartments() {
     let selectedId= this.departmentid;
     this.router.navigate(["/departmentlist",{id:selectedId}])
+    // this.router.navigate(['../',{id:selectedId}],{relativeTo:this.route});
   }
 }
